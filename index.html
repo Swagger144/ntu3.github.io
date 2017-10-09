@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ISTE-VESIT</title>
+<link rel="shortcut icon" type="image/x-icon" href="iste_blue.png" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="w3.css">
+<style type="text/css">
+	@media (max-width: 900px) {
+    .column1 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column1 {
+        width: 100%;
+    }
+}
+</style>
+
+</head>
+<body>
+	
+	<div id='stars'></div>
+	<div id='stars2'></div>
+	<div id='stars3'></div>
+
+	<div class="header">
+		<div class="iste" align="center">
+			<a href="iste.html"><img src="iste_blue.png" alt="iste" style="width: 150px; height: 150px;"></a>
+		</div>
+	</div>
+	<a href="iste.html">
+		<div class="caption">    
+    		<div class="name">
+    			<div class="letter">I</div>
+    			<div class="letter">S</div>
+   				<div class="letter">T</div>
+    			<div class="letter">E</div>
+    			<div class="letter">-</div>
+    			<div class="letter">V</div>
+    			<div class="letter">E</div>
+    			<div class="letter">S</div>
+    			<div class="letter">I</div>
+    			<div class="letter">T</div>
+    		</div>
+    	</div>
+    </a>
+
+    <div class="ntu">
+    	<svg viewBox="0 0 1860 200">
+			<symbol id="s-text">
+				<text text-anchor="middle" x="50%" y="80%">Notice the Unnoticed</text>
+			</symbol>
+
+			<g class = "g-ants">
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+			</g>
+		</svg>
+    </div>
+
+    
+
+<div class="main1">
+	<div class="row1">
+	  <div class="column1">
+	    <div class="contentx day1">
+	    	<a href="" style="cursor: not-allowed;"><img src="ntuday1.jpg" alt="" style="width:100%;"></a>
+	    </div>
+	  </div>
+	  <div class="column1">
+	  	<div class="arrow arrow-1"></div>
+		<div class="arrow arrow-2"></div>
+	    <div class="contentx day2">
+	    	<img src="ntuday2.jpg" alt="" style="width:100%; cursor: pointer;" onclick="document.getElementById('modal01').style.display='block'">
+	    </div>
+	  </div>
+	  <div class="column1">
+	    <div class="contentx day3">
+	    	<a href="#" style="cursor: not-allowed;"><img src="day3.jpg" alt="" style="width:100%"></a>
+	    </div>
+	  </div>
+	  <div class="column1">
+	    <div class="contentx day4">
+	    	<a href="#" style="cursor: not-allowed;"><img src="day4.jpg" alt="" style="width:100%"></a>
+	    </div>
+	  </div>
+	  <div class="column1">
+	    <div class="contentx day5">
+	    	<a href="#" style="cursor: not-allowed;"><img src="day5.jpg" alt="" style="width:100%"></a>
+	    </div>
+	  </div>
+	  <div class="column1">
+	    <div class="contentx day6">
+	    	<a href="#" style="cursor: not-allowed;"><img src="day6.jpg" alt="" style="width:100%"></a>
+	    </div>
+	  </div>
+	</div>
+
+			<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+			    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+			    <div class="w3-modal-content" style="background-color: #fefefe;margin: auto;padding: 10px;border: 1px solid #888;width: 50%; height: 50%;">
+			      <img src="ntuday1.jpg" style="width: 100%;height: 100%">
+			    </div>
+		    </div>
+
+	<div id="popup" class="overlay">
+		<div class="popup">
+			<h2>Day 1</h2>
+			<a class="close" href="#">&times;</a>
+			<div class="content1">
+					<img src="ntu2017.jpg" style="width: 218px;">
+			</div>
+		</div>
+	</div>
+</div>
+
+		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script>
+		<script type="text/javascript">
+		          var opac = anime({
+		              targets: ".letter",
+		              opacity: 1,
+		              scale: 1,
+		              easing: "easeInBounce",
+		              delay: function(el, index) {
+		                return index * 80;
+		              },
+		              direction: "alternate",
+		              loop: true
+		            });
+		</script>
+</body>
+</html>
